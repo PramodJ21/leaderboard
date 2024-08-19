@@ -1,0 +1,155 @@
+
+.profileCard{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 75vh;
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+    border: 2px solid black;
+}   
+
+.realRank{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #838383;
+}
+
+.realRank .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+
+
+.realRank .inner p{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+.profileCard .cardImage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 60%;
+    /* background-image: url("pfp.jpg"); */
+    background-size: cover;
+    /* padding: 10px; */
+}
+.cancel{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: red;
+}
+.profileCard .cardImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 10px; */
+    /* border-bottom: 2px solid black; */
+}
+.profileCard .cardImage .details{
+    position: absolute;
+    bottom: 5px;
+    /* width: 80%; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color:#f2f2f2;
+    border: 1px solid black;
+    color: black;
+}
+
+
+.profileCard .cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+
+.profileCard .cardContent .cardHistory{
+    display: flex;
+    width: 90%;
+    height: 50%;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.profileCard .cardContent .cardHistory h1{
+    text-transform: uppercase;
+    color: black;
+    font-size: 1rem;
+}
+
+.profileCard .cardContent .cardHistory p{
+    color: black;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.profileCard .cardContent .cardHistory .col1,
+.profileCard .cardContent .cardHistory .col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.profileCard .cardContent .cardCurrent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    gap: 20px;
+    /* border: 1px solid rgb(163, 23, 23); */
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.profileCard .cardContent .cardCurrent h1{
+    color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.profileCard .cardContent .cardCurrent p{
+    color: black;
+    font-size: 1rem;
+}
+
+.profileCard .cardContent .cardCurrent .currentRank,
+.profileCard .cardContent .cardCurrent .currentRating{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
