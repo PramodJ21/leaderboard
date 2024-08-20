@@ -10,6 +10,7 @@ const Leaderboard = () => {
     const [userData, setUserData] = useState([]);
     const [trigger,setTrigger] = useState(false);
     const [currentUser, setCurrentUser] = useState();
+    const [rank, setRank] = useState(0);
 
     useEffect(() => {
         fetchUserData();
@@ -36,6 +37,7 @@ const Leaderboard = () => {
     const displayCard = (index) => {
         setCurrentUser(userData[index])
         setTrigger(true)
+        setRank(index+1)
     }
 
     return (
@@ -65,7 +67,7 @@ const Leaderboard = () => {
                     </tbody>
                 </table>
             </div>
-            <ProfileCard trigger={trigger} setTrigger={setTrigger} data={currentUser}/>
+            <ProfileCard trigger={trigger} setTrigger={setTrigger} data={currentUser} rank={rank}/>
         </div>
     );
 };

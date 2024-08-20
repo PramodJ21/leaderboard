@@ -20,50 +20,46 @@ const ProfileCard = (props) => {
                         <p>1</p>
                 </div>
             </div> */}
-            <div className={styles.heading}>
-                    <div>
-                        <h1>{props.data.handle}</h1>
-                    </div>
-                </div>
+            
             </div>
                 
             </div>
             <div className={styles.cardContent}>
-                
+            <div className={styles.heading}>
+                        <h1>#  {props.rank} </h1>
+                        <h1>{props.data.handle}</h1>
+                </div>
+                <div className={styles.hr}><hr /></div>
                 <div className={styles.cardHistory}>
                     <div className={styles.col1}>
                         <div className={styles.country}>
-                            <h1>Country</h1>
-                            <p>{props.data.country ? props.data.country : "-"}</p>
+                            <p>Country</p>
+                            <h1>{props.data.country ? props.data.country : "-"}</h1>
                         </div>
                         <div className={styles.maxRating}>
-                            <h1>Max Rating</h1>
-                            <p>{props.data.maxRating}</p>
+                            <p>Max Rating</p>
+                            <h1>{props.data.maxRating}</h1>
                         </div>
                     </div>
                     <div className={styles.col2}>
                         <div className={styles.city}>
-                            <h1>City</h1>
-                            <p>{props.data.city ? props.data.city : "-"}</p>
+                            <p>City</p>
+                            <h1>{props.data.city ? props.data.city : "-"}</h1>
                         </div>
                         <div className={styles.maxRank}>
-                            <h1>Max Rank</h1>
-                            <p>{props.data.maxRank}</p>
+                            <p>Max Rank</p>
+                            <h1>{props.data.maxRank}</h1>
                         </div>
                     </div>
                 </div>
                 <div className={styles.cardCurrent}>
                     <div className={styles.currentRank}>
-                        <div>
-                            <p>Rank</p>
                             <h1>{props.data.rank}</h1>
-                        </div>
+                            <p>Rank</p>
                     </div>
                     <div className={styles.currentRating}>
-                        <div>
-                            <p>Rating</p>
                             <h1>{props.data.rating}</h1>
-                        </div>
+                            <p>Rating</p>
                     </div>
                 </div>
             </div>
